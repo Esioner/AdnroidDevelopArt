@@ -5,11 +5,19 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <!--<com.example.esioner.view.view.View_01-->
-    <!--android:layout_width="match_parent"-->
-    <!--android:layout_height="match_parent" />-->
-    <com.example.esioner.view.view.View_02_TouchView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:background="#000" />
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <com.example.esioner.view.view.MyListView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </com.example.esioner.view.view.MyListView>
+    </ScrollView>
+
+
 </android.support.constraint.ConstraintLayout>
